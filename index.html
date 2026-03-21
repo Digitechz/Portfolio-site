@@ -149,8 +149,32 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Oswald',sans-serif
 .res-list li{font-family:'Rajdhani',sans-serif;font-size:.78rem;color:var(--muted);line-height:1.5;padding-left:.8rem;position:relative;}
 .res-list li::before{content:'→';position:absolute;left:0;color:var(--bg);font-size:.65rem;}
 /* day card images */
-.day-img-wrap{width:100%;margin:.4rem 0 .35rem;border-radius:.25rem;overflow:hidden;border:1px solid rgba(1,95,204,0.2);}
+.day-img-wrap{width:100%;margin:.4rem 0 .35rem;border-radius:.25rem;overflow:visible;border:1px solid rgba(1,95,204,0.2);}
 .day-img{width:100%;height:90px;object-fit:cover;object-position:top;display:block;}
+.day-card{
+  transition: transform 0.25s ease;
+}
+
+.day-card:hover{
+  transform: scale(1.05);
+  z-index: 5;
+}
+.day-img-wrap{
+  transition: transform 0.2s ease;
+}
+
+.day-img{
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.day-img-wrap:hover{
+  transform: translateY(-2px);
+}
+
+.day-img-wrap:hover .day-img{
+  transform: scale(1.4);
+  filter: brightness(1.1);
+}
 .day-card-project{border-left-color:var(--c1);background:rgba(22,207,251,0.06);}
 .day-card-project .day-img{height:90px;}
 .day-proj-btn{display:flex;align-items:center;justify-content:center;gap:.4rem;margin-top:.55rem;padding:.38rem .7rem;background:var(--bg);color:var(--fg);font-family:'Share Tech Mono',monospace;font-size:.62rem;letter-spacing:.1em;border-radius:.25rem;text-decoration:none;transition:background .1s;}
