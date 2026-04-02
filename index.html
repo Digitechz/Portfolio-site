@@ -410,7 +410,7 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Oswald',sans-serif
     <div class="fab-header"><div class="fab-badge">FABLAB</div><div class="fab-sub">// MODULES · LEARNING PATH</div></div>
     <div class="fab-grid">
       <div class="mod-card" onclick="goToModule1()"><div class="mod-num">MODULE — 01</div><div class="mod-title">Web Technology</div><div class="mod-desc">7-Day HTML, CSS &amp; JS mastery program</div><span class="mod-tag">AVAILABLE</span></div>
-      <div class="mod-card locked"><div class="mod-lock-icon">🔒</div><div class="mod-num">MODULE — 02</div><div class="mod-title">AI / ML</div><div class="mod-desc">Machine learning fundamentals</div><span class="mod-tag">COMING SOON</span></div>
+      <div class="mod-card" onclick="goToModule2()"><div class="mod-num">MODULE — 02</div><div class="mod-title">UI/UX Design</div><div class="mod-desc">Figma · Wireframing · Prototyping</div><span class="mod-tag">AVAILABLE</span></div>
       <div class="mod-card locked"><div class="mod-lock-icon">🔒</div><div class="mod-num">MODULE — 03</div><div class="mod-title">Cyber Security</div><div class="mod-desc">Security concepts &amp; practices</div><span class="mod-tag">COMING SOON</span></div>
       <div class="mod-card locked"><div class="mod-lock-icon">🔒</div><div class="mod-num">MODULE — 04</div><div class="mod-title">CAD Designing</div><div class="mod-desc">In progress</div><span class="mod-tag">COMING SOON</span></div>
       <div class="mod-card locked"><div class="mod-lock-icon">🔒</div><div class="mod-num">MODULE — 05</div><div class="mod-title">3D-printing</div><div class="mod-desc">In progress</div><span class="mod-tag">COMING SOON</span></div>
@@ -551,6 +551,107 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Oswald',sans-serif
       </div>
 
     </div>
+
+    <!-- ══════════════════════════════════════
+     SCREEN 7 — MODULE 2
+══════════════════════════════════════ -->
+<div id="module2-screen" class="screen">
+  <button class="back-btn" onclick="goToFablab()">← FABLAB</button>
+  <div id="mod1-watermark">UI/UX</div>
+  <div id="mod1-wrap">
+    <div class="mod-header">
+      <div class="mod-main-badge">MODULE 02 — UI/UX DESIGN</div>
+      <div class="mod-tagline">FIGMA · WIREFRAMING · PROTOTYPING · DESIGN SYSTEMS</div>
+    </div>
+
+    <!-- Project showcase -->
+    <div class="days-grid" style="grid-template-columns:repeat(3,1fr);gap:.8rem;width:min(900px,96vw);margin-bottom:1.4rem;">
+
+      <div class="day-card day-card-project" style="grid-column:span 3;">
+        <div class="day-num">FINAL PROJECT</div>
+        <div class="day-title">Trackz — App Design</div>
+        <div class="day-sub">Complete UI/UX Design in Figma</div>
+        <ul class="day-list" style="margin-bottom:.6rem;">
+          <li>Full app wireframe &amp; prototype</li>
+          <li>Design system with components</li>
+          <li>Interactive flows &amp; transitions</li>
+          <li>Final polished UI screens</li>
+        </ul>
+        <a href="https://www.figma.com/design/cmBTEzRTou7ZTGDvgdS3N8/Trackz-Final-Design?node-id=0-1&t=pamytNVZoIbiHKFi-1"
+           target="_blank" class="day-proj-btn">▶ OPEN IN FIGMA</a>
+      </div>
+
+      <div class="day-card">
+        <div class="day-num">SKILL — 01</div>
+        <div class="day-title">Wireframing</div>
+        <div class="day-sub">Low &amp; High Fidelity</div>
+        <ul class="day-list">
+          <li>User flow mapping</li>
+          <li>Layout structuring</li>
+          <li>Component planning</li>
+        </ul>
+      </div>
+
+      <div class="day-card">
+        <div class="day-num">SKILL — 02</div>
+        <div class="day-title">Visual Design</div>
+        <div class="day-sub">Figma Design Tools</div>
+        <ul class="day-list">
+          <li>Typography &amp; colour</li>
+          <li>Auto layout &amp; frames</li>
+          <li>Component variants</li>
+        </ul>
+      </div>
+
+      <div class="day-card">
+        <div class="day-num">SKILL — 03</div>
+        <div class="day-title">Prototyping</div>
+        <div class="day-sub">Interactive Design</div>
+        <ul class="day-list">
+          <li>Screen connections</li>
+          <li>Interaction triggers</li>
+          <li>Presentation flows</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="resources-row" style="grid-template-columns:1fr 1fr 1fr;">
+      <div class="res-box">
+        <div class="res-title">Tools Used</div>
+        <ul class="res-list">
+          <li>Figma (primary tool)</li>
+          <li>Auto Layout</li>
+          <li>Components &amp; Variants</li>
+        </ul>
+      </div>
+      <div class="res-box">
+        <div class="res-title">Design Principles</div>
+        <ul class="res-list">
+          <li>User-centred design</li>
+          <li>Visual hierarchy</li>
+          <li>Consistency &amp; spacing</li>
+        </ul>
+      </div>
+      <div class="res-box">
+        <div class="res-title">Resources</div>
+        <ul class="res-list">
+          <li>Figma Learn docs</li>
+          <li>Material Design guidelines</li>
+          <li>Refactoring UI (book)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="controls">
+    <p class="ctrl-desc">UI/UX Design</p>
+    <div class="cmdr"><span>Command</span><hr></div>
+    <div class="cbtns">
+      <div class="citem"><span class="ckey">A</span><span class="clbl">Back</span></div>
+    </div>
+  </div>
+</div>
 
     <!-- Resources -->
     <div class="resources-row">
@@ -863,6 +964,7 @@ function goToSystem(){showScreen('system','splash',()=>{
   triggerSysEnter();
 });}
 function goToModule1(){playNav();showScreen('module1','splash');}
+function goToModule2(){playNav();showScreen('module2','splash');}
 
 /* ══════════════════════════════════════════════════
    KEYBOARD
@@ -896,6 +998,10 @@ document.addEventListener('keydown',e=>{
     case 'module1':
       if(e.key==='Escape'||e.key==='Backspace')goToFablab();
       break;
+    case 'module2':
+      if(e.key==='Escape'||e.key==='Backspace')goToFablab();
+      break;
+      
   }
 });
 </script>
